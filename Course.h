@@ -4,7 +4,22 @@
 #include <string>
 #include "Student.h"
 using namespace std;
-//#write your code here
+class course
+{
+private:
+	string courseCode;
+	string courseName;
+	int maxStudents;
+	Student* students;
+	int currentStudents;
+public:
+	course();
+	course(string code, string name, int max, int current);
+	void displayCourseInfo();
+	void addStudent(const Student& s);
+	~course();
+};
+#endif;
 
 
 
@@ -19,4 +34,5 @@ using namespace std;
 
 
 
-#endif
+
+
